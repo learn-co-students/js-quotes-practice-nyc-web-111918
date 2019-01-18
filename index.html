@@ -10,9 +10,24 @@
   <title>Motivation</title>
 </head>
 <body class='container center'>
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="edit-form">
+        <label for="edit-quote">Edit Quote</label>
+        <textarea id="edit-quote-input" rows="2" cols="50" placeholder="Quote"></textarea><br>
+        <label for="edit-author">Edit Author</label>
+        <input id="edit-author-input" type="text"><br>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+
   <h1>My favorite quotes:</h1>
   <div>
     <ul id="quote-list">
+
     </ul>
   </div>
   <hr>
@@ -24,7 +39,7 @@
       </div>
       <div class="form-group">
         <label for="Author">Author</label>
-        <input type="text" class="form-control" id="author" placeholder="Flatiron School">
+        <input type="text" class="form-control" id="new-author" placeholder="Flatiron School">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
